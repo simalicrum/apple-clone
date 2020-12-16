@@ -7,8 +7,9 @@
 }
 #main {
   display: grid;
+  height: 100vh;
   grid-template-columns: 1fr minmax(22px, 230px) 980px minmax(22px, 230px) 1fr;
-  grid-template-rows: 83px 36px 419px 200px 90px;
+  grid-template-rows: 83px 36px minmax(419px, 1fr) 200px 90px;
   grid-row-gap: 2px;
 }
 
@@ -108,7 +109,7 @@ nav div {
   grid-row: 3 / 4;
   display: grid;
   justify-items: center;
-  grid-template-rows: repeat(4, auto) 1fr;
+  grid-template-rows: 1fr repeat(4, auto) 1fr;
 }
 
 #verse div {
