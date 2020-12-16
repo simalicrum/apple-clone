@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana,
+    sans-serif;
+}
+#main {
+  display: grid;
+  grid-template-columns: 1fr minmax(22px, 230px) 980px minmax(22px, 230px) 1fr;
+  grid-template-rows: 83px 36px 419px 200px 90px;
+  grid-row-gap: 2px;
+}
+
+nav {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  height: 36px;
+  color: white;
+  background: gray;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr) 132px;
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      #787878ff,
+      rgba(255, 255, 255, 0) 2px,
+      rgba(255, 255, 255, 0) calc(100% - 2px),
+      #787878ff
+    ),
+    linear-gradient(
+      #767676,
+      #8d8d8d 4%,
+      #707070 50%,
+      #5e5e5e 50%,
+      #787878 96%,
+      #4a4a4a
+    );
+  font-size: 12px;
+  text-shadow: 0 -1px #3b3b3b;
+}
+
+nav div {
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #474747ff,
+    rgba(255, 255, 255, 0.2) 1px,
+    rgba(255, 255, 255, 0) 1.5px,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) calc(100% - 1.5px),
+    rgba(255, 255, 255, 0.2) calc(100% - 1px),
+    #474747ff
+  );
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#apple {
+  font-size: 24px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) calc(100% - 1.5px),
+    rgba(255, 255, 255, 0.2) calc(100% - 1px),
+    #474747ff
+  );
+}
+
+#search {
+  background: linear-gradient(
+    to right,
+    #474747ff,
+    rgba(255, 255, 255, 0.2) 1px,
+    rgba(255, 255, 255, 0) 1.5px,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+#search-inner {
+  height: 18px;
+  width: 106px;
+  background: #88888844;
+  border-radius: 16px;
+  box-shadow: 0 -1px #3b3b3b, 0 1px #888888;
+  padding-left: 6px;
+  justify-self: center;
+  justify-items: left;
+}
+
+#hero {
+  grid-column: 2 / 5;
+  grid-row: 1 / 4;
+  background-image: url("your_verse_hero_2x.jpg");
+  background-position: 50% 100%;
+  background-size: 1440px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#verse {
+  color: white;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(4, auto) 1fr;
+}
+
+#verse div {
+  font-family: "Noto Sans JP", sans-serif;
+  background: radial-gradient();
+}
+
+#verse-1 {
+  font-size: 60px;
+}
+
+#verse-2a,
+#verse-2b {
+  font-size: 36px;
+}
+
+#verse-3 {
+  font-size: 24px;
+}
+
+aside {
+  display: grid;
+  grid-gap: 2px;
+  grid-row: 4 / 5;
+  grid-column: 2 / 5;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.promo {
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+#iphone5s {
+  background-image: url("promo_iphone5s_2x.jpg");
+}
+
+#iphone5c {
+  background-image: url("promo_iphone5c_2x.jpg");
+}
+
+#happybd {
+  background-image: url("promo_30_years_2x.jpg");
+}
+
+#supplier {
+  background-image: url("promo_supplier_responsibility_2x.jpg");
+}
+
+footer {
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20px 1fr 1fr 16px;
+}
+
+footer div {
+  font-size: 10px;
+  color: #6e6e6e;
+  text-align: start;
+}
+
+.first {
+  grid-row-start: 2;
+}
+
+.second {
+  grid-row-start: 3;
+}
+
+#usa {
+  width: 16px;
+}
